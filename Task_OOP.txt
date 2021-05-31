@@ -1,0 +1,4 @@
+TÚ:Hoàn thiện nốt các sản phẩm chức năng và slide
+ĐÔNG:Đọc hiểu ford-fulkerson và edmons karp
+MINH:Đọc hiểu Linear Programing
+Họp:Tối T7 29/5 9h chúng ta sẽ có 1 buổi họp trên teams để chốt dự án

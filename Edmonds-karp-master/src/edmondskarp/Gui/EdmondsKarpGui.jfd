@@ -1,0 +1,486 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"defaultCloseOperation": 0
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, comp pencilButton:::p::p, space :::p, comp rubberButton:::p::p, space :::p, comp dragButton:::p::p, space s:::p, comp undoButton:::p:35:p, space :::p, comp redoButton:::p:35:p, space :p:24:p, comp backButton:::p:33:p, space :p:5:p, comp playButton:::p::p, space :p:5:p, comp forwardButton:::p:33:p, space :::p, comp stopButton:::p:33:p, space :::p, comp runButton:::p::p, space u:::p, comp jComboBox1:::p:103:p, space :p:26:p, comp residualButton:::p::p, space :p:40:p, comp jLabelMin:::p::p, space :p:35:p, comp jLabelMaxFlow:::p::p, space :::p}}"
+				"$verticalGroup": "par l {seq t {space :::p, par t {comp stopButton::l:::x, comp forwardButton::l:::x, comp backButton::l:::x, comp playButton::l:::x, comp rubberButton::l:::x, comp pencilButton::l:::x, comp runButton::l:::x, comp dragButton::t:::x, comp undoButton::l:::x, comp redoButton::l:::x, comp residualButton::l:::x, comp jComboBox1::l:::x, comp jLabelMaxFlow::t:::x, comp jLabelMin::t:::x}, space :p:670:p}}"
+			} ) {
+				name: "jPanel1"
+				"background": new java.awt.Color( 169, 169, 169, 255 )
+				"preferredSize": new java.awt.Dimension( 824, 50 )
+				add( new FormComponent( "javax.swing.JToggleButton" ) {
+					name: "pencilButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/edmondskarp/Gui/icon/draw.png" )
+					"selected": true
+					"toolTipText": "draw"
+					"focusable": false
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 30, 30 )
+					"minimumSize": new java.awt.Dimension( 24, 24 )
+					"name": ""
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "pencilButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToggleButton" ) {
+					name: "rubberButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/edmondskarp/Gui/icon/remove.png" )
+					"toolTipText": "erase"
+					"focusable": false
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 30, 30 )
+					"minimumSize": new java.awt.Dimension( 24, 24 )
+					"name": ""
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rubberButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToggleButton" ) {
+					name: "playButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/edmondskarp/Gui/icon/play.png" )
+					"toolTipText": "play"
+					"focusable": false
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 30, 30 )
+					"minimumSize": new java.awt.Dimension( 24, 24 )
+					"name": ""
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "playButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/edmondskarp/Gui/icon/back 1.png" )
+					"focusable": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "forwardButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/edmondskarp/Gui/icon/forward 1.png" )
+					"focusable": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "forwardButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "stopButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/edmondskarp/Gui/icon/square.png" )
+					"toolTipText": "stop"
+					"focusable": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "stopButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "runButton"
+					"text": "Run"
+					"toolTipText": "stop"
+					"focusable": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "runButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "jComboBox1"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "BFS"
+						addElement( "BFS" )
+						addElement( "DFS" )
+					}
+					"focusable": false
+					auxiliary() {
+						"JavaCodeGenerator.typeParameters": "String"
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jComboBox1ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToggleButton" ) {
+					name: "dragButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/edmondskarp/Gui/icon/drag.png" )
+					"toolTipText": "erase"
+					"focusable": false
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 30, 30 )
+					"minimumSize": new java.awt.Dimension( 24, 24 )
+					"name": ""
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dragButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "undoButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/edmondskarp/Gui/icon/undo.png" )
+					"toolTipText": "undo"
+					"focusable": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "undoButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "redoButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/edmondskarp/Gui/icon/redo.png" )
+					"toolTipText": "redo"
+					"focusable": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "redoButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToggleButton" ) {
+					name: "residualButton"
+					"text": "Residuo"
+					"toolTipText": "grafo residuo"
+					"focusable": false
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 30, 30 )
+					"minimumSize": new java.awt.Dimension( 24, 24 )
+					"name": ""
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "residualButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabelMin"
+					"font": new java.awt.Font( "Ubuntu", 1, 24 )
+					"text": "Min = 0"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabelMaxFlow"
+					"font": new java.awt.Font( "Ubuntu", 1, 24 )
+					"text": "Flow = 0"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "First"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {space :0:971:x}"
+				"$verticalGroup": "par l {space :0:507:x}"
+			} ) {
+				name: "myPanel"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"maximumSize": new java.awt.Dimension( 1920, 1080 )
+				"preferredSize": new java.awt.Dimension( 800, 600 )
+				auxiliary() {
+					"JavaCodeGenerator.customCreateCode": "new MyPanel(this);"
+				}
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "myPanelMouseReleased", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "myPanelMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseMotionListener", "mouseDragged", "myPanelMouseDragged", true ) )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "jMenuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "jMenu1"
+					"text": "File"
+					"preferredSize": new java.awt.Dimension( 50, 21 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "jMenuItem5"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 78, 130, false )
+						"text": "New"
+						"preferredSize": new java.awt.Dimension( 110, 25 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "newActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "jMenuItem1"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 79, 130, false )
+						"text": "Open"
+						"preferredSize": new java.awt.Dimension( 110, 25 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "OpenActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "jMenuItem4"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 83, 130, false )
+						"text": "Save"
+						"preferredSize": new java.awt.Dimension( 110, 25 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SaveActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "jMenuItemExit"
+						"text": "Exit"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jMenuItemExitActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "jMenu2"
+					"text": "Modify"
+					"maximumSize": new java.awt.Dimension( 70, 32767 )
+					"preferredSize": new java.awt.Dimension( 90, 21 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "jMenuItemExample"
+						"text": "example"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jMenuItemExampleActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "jMenuItem10"
+						"text": "Preference"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "preferenceActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "jMenu3"
+					"text": "help"
+					"preferredSize": new java.awt.Dimension( 40, 21 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "jMenuItemAbout"
+						"text": "About"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jMenuItemAboutActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 973, 741 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+		add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+			name: "jPopupMenu1"
+			"lightWeightPopupEnabled": false
+			"maximumSize": new java.awt.Dimension( 97, 54 )
+			"minimumSize": new java.awt.Dimension( 97, 54 )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "jMenuItem2"
+				"text": "Set source "
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setSourceActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "jMenuItem3"
+				"text": "Set Destination"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setSinkActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+				name: "jSeparator1"
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "jMenuItem6"
+				"text": "Delete node "
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteNodeActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 757 )
+		} )
+		add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+			name: "jPopupMenu2"
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "jMenuItem7"
+				"text": "Set Capacity"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setCapacityActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "jMenuItem8"
+				"text": "Set flow "
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setFlowActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+				name: "jSeparator2"
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "jMenuItem9"
+				"text": "Delete arc "
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteEdgeActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 841 )
+		} )
+		add( new FormContainer( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jPanel2::t:::x}"
+			"$verticalGroup": "par l {comp jPanel2::l:p::p}"
+		} ) {
+			name: "jDialog1"
+			"title": "Enter the value "
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, par l {comp jLabel1:::p:139:p, seq {comp jTextField2:::p:79:p, space s:::p, comp jButton2:::p:70:p}}, space ::31:x}}"
+				"$verticalGroup": "par l {seq t {space :::p, comp jLabel1:::p:25:p, par l {seq {space :::p, comp jButton2:::p::p, space :::x}, seq t {space :::x, comp jTextField2:::p::p, space :p:25:p}}}}"
+			} ) {
+				name: "jPanel2"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel1"
+					"text": "set capacity "
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "jTextField2"
+					"nextFocusableComponent": new FormReference( "jButton2" )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jButton2"
+					"text": "Ok"
+					"focusable": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton2ActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 925 )
+		} )
+		add( new FormContainer( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jTabbedPane2::l:::x}"
+			"$verticalGroup": "par l {comp jTabbedPane2:::p:288:p}"
+		} ) {
+			name: "jDialog2"
+			"minimumSize": new java.awt.Dimension( 341, 266 )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "jTabbedPane2"
+				"minimumSize": new java.awt.Dimension( 349, 304 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {seq l {comp jLabel2:::p::p, space :::p, comp jTextField1:::p:62:p, space s:::p, comp jButtonSetDefCapacity:::p:71:p}, comp jLabel7::l:p::p, comp jSliderPosText::l:p::p, comp jRadioButtonRandomCap::l:p::p, comp jRadioButtonDefaultCap::l:p::p}, space ::127:x}}"
+					"$verticalGroup": "par l {seq l {space :p:24:p, comp jRadioButtonRandomCap:::p::p, space s:::p, comp jRadioButtonDefaultCap:::p::p, space s:::p, par b {comp jLabel2::b:p:28:p, comp jTextField1::b:::x, comp jButtonSetDefCapacity::b:p::p}, space s:::p, comp jLabel7:::p::p, space :::p, comp jSliderPosText:::p::p, space ::62:x}}"
+				} ) {
+					name: "jPanel3"
+					"minimumSize": new java.awt.Dimension( 341, 266 )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "jTextField1"
+						"enabled": false
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel2"
+						"text": "Capacità default"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel7"
+						"text": "Posizione testo"
+					} )
+					add( new FormComponent( "javax.swing.JSlider" ) {
+						name: "jSliderPosText"
+						"maximum": 150
+						"minimum": 30
+						addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "jSliderPosTextStateChanged", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButtonSetDefCapacity"
+						"text": "Set"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButtonSetDefCapacityActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "jRadioButtonRandomCap"
+						"selected": true
+						"text": "Capcità random"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jRadioButtonRandomCapActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "jRadioButtonDefaultCap"
+						"text": "Capacità default"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jRadioButtonDefaultCapActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Generale"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {comp jLabel3:::p::p, seq {par t:::p {comp jLabel4:::::x, comp jLabel5::t:::x, comp jLabel6::l:p::p, comp jLabel11::l:p::p}, space :23:23:p, par l {comp jButtonSaturoColor:::p:58:p, comp jButtonAttraversatoColor:::p:58:p, comp jButtonSelezionatoColor:::p:58:p, comp jButtonDefaultColor::t:p:58:p}}}, space ::227:x}}"
+					"$verticalGroup": "par l {seq l {space :p::p, comp jLabel3:::::x, space u:p::p, par l {comp jLabel4::l:p:24:p, comp jButtonDefaultColor:::p:24:p}, space u:p::p, par l:::p {comp jLabel5:::::x, comp jButtonAttraversatoColor::::24:x}, space u:p::p, par l:::p {comp jButtonSaturoColor::::24:x, comp jLabel6:::::x}, space u:p::p, par l:::p {comp jButtonSelezionatoColor::l::24:x, comp jLabel11::l:::x}, space :p:128:p}}"
+				} ) {
+					name: "jPanel4"
+					"minimumSize": new java.awt.Dimension( 341, 266 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel3"
+						"font": new java.awt.Font( "Ubuntu", 1, 15 )
+						"text": "Arco"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel4"
+						"text": "default"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel5"
+						"text": "attraversato"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel6"
+						"text": "saturo"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButtonDefaultColor"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "defaultColorActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButtonAttraversatoColor"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "attraversatoColorActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButtonSaturoColor"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saturoColorActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel11"
+						"text": "selezionato"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButtonSelezionatoColor"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selezionatoColorActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Colori"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {seq {comp jLabel8:::p::p, space ::38:x, par t:::p {comp jComboBoxDimText::l:::x, comp jComboBoxDimCircle::l:::x}, space :p:154:p}, seq {par l {comp jLabel9::l:p:41:p, par t:l::p {seq l {comp jLabel10:::p::p, space :::x, comp StrokeCirclejSlider:::p::p}, seq l {comp jLabel12:::p::p, space s:::p, comp StrokeArrowjSlider:::p::p}}}, space :::x}}}}"
+					"$verticalGroup": "par l {seq {space :::p, par b {comp jLabel8::b:p:28:p, comp jComboBoxDimCircle::b:::x}, space :::p, par b {comp jLabel9::b:p:28:p, comp jComboBoxDimText::b:::x}, space :30:30:p, par l:::p {comp StrokeCirclejSlider:::::x, comp jLabel10:::::x}, space :p:27:p, par l:::p {comp StrokeArrowjSlider:::::x, comp jLabel12:::p:54:p}, space :p:27:p}}"
+				} ) {
+					name: "jPanel5"
+					"minimumSize": new java.awt.Dimension( 341, 266 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel8"
+						"text": "Circonferenza nodi"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "jComboBoxDimCircle"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "25"
+							addElement( "25" )
+							addElement( "30" )
+							addElement( "35" )
+							addElement( "40" )
+							addElement( "45" )
+							addElement( "50" )
+							addElement( "55" )
+							addElement( "60" )
+							addElement( "65" )
+						}
+						"toolTipText": ""
+						auxiliary() {
+							"JavaCodeGenerator.typeParameters": "String"
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jComboBoxDimCircleActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel9"
+						"text": "Testo"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "jComboBoxDimText"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "10"
+							addElement( "10" )
+							addElement( "12" )
+							addElement( "14" )
+							addElement( "16" )
+							addElement( "18" )
+							addElement( "20" )
+							addElement( "22" )
+							addElement( "24" )
+							addElement( "26" )
+							addElement( "28" )
+							addElement( "30" )
+						}
+						"selectedIndex": 3
+						auxiliary() {
+							"JavaCodeGenerator.typeParameters": "String"
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "DimTextActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JSlider" ) {
+						name: "StrokeCirclejSlider"
+						"maximum": 60
+						"minimum": 1
+						"paintLabels": true
+						"paintTicks": true
+						"value": 10
+						addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "StrokeCirclejSliderStateChanged", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JSlider" ) {
+						name: "StrokeArrowjSlider"
+						"maximum": 60
+						"minimum": 1
+						"paintLabels": true
+						"paintTicks": true
+						"value": 10
+						addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "StrokeArrowjSliderStateChanged", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel10"
+						"text": "Linea Nodi"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel12"
+						"text": "Linea Archi"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Dimensioni"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 1065 )
+		} )
+	}
+}
