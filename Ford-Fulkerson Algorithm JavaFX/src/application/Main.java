@@ -23,7 +23,7 @@ public class Main extends Application {
 	
 	static List<GridPane> grid=new ArrayList<GridPane>();
 	
-	public static int muslukSayisi = 0;
+	public static int numOfPump = 0;
 	
 	public static void main(String[] args) {
 		

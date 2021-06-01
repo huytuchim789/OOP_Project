@@ -20,22 +20,22 @@ import org.graphstream.graph.implementations.*;
 
 public class MainController{
 	
-	public static int muslukSayisi;
+	public static int numOfPump;
 	
 	@FXML
 	private Label lblStatus;
 	
 	@FXML
-	private TextField txtMuslukSayisi;
+	private TextField txtNumOfPump;
 	
 	
-	public void TakeMuslukSayisi(ActionEvent event) {
-		if( txtMuslukSayisi.getText().equals("")) {
+	public void TakeNumOfPump(ActionEvent event) {
+		if( txtNumOfPump.getText().equals("")) {
 			lblStatus.setText("Please Enter the Number of Faucets\n!");
 			System.out.println("BOS");
 		}else {
-			muslukSayisi=Integer.valueOf(txtMuslukSayisi.getText());
-			System.out.println( "Number of taps\n: "+txtMuslukSayisi.getText());
+			numOfPump=Integer.valueOf(txtNumOfPump.getText());
+			System.out.println( "Number of taps\n: "+txtNumOfPump.getText());
 			lblStatus.setText("Generating Graph..");
 			
 			Graph graph = new SingleGraph("You are viewing the nodes");
@@ -44,7 +44,7 @@ public class MainController{
 	        graph.setAutoCreate(true);
 
 	        
-			for(int i=0;i<muslukSayisi;i++) {
+			for(int i=0;i<numOfPump;i++) {
 				graph.addNode(i+"");
 			}
 			

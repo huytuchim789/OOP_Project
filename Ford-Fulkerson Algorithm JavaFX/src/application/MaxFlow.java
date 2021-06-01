@@ -73,7 +73,7 @@ public class MaxFlow
   
         // Augment the flow while tere is path from source 
         // to sink 
-        while (bfs(rGraph, s, t, parent,MainController.muslukSayisi)) 
+        while (bfs(rGraph, s, t, parent,MainController.numOfPump))
         { 
             // Find minimum residual capacity of the edhes 
             // along the path filled by BFS. Or we can say 

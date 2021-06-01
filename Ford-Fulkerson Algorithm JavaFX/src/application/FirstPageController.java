@@ -67,7 +67,7 @@ public class FirstPageController implements Initializable{
     	 graph.setStrict(false);
          graph.setAutoCreate(true);
          
- 		for(int i=0;i< MainController.muslukSayisi;i++) {
+ 		for(int i=0;i< MainController.numOfPump;i++) {
  			graph.addNode(i+"");
  		}			
  		 for (Node node : graph) {
@@ -94,7 +94,7 @@ public class FirstPageController implements Initializable{
         graph.setStrict(false);
         graph.setAutoCreate(true);
         
-		for(int i=0;i< MainController.muslukSayisi;i++) {
+		for(int i=0;i< MainController.numOfPump;i++) {
 			graph.addNode(i+"");
 		}			
 		 for (Node node : graph) {
@@ -162,7 +162,7 @@ public class FirstPageController implements Initializable{
 		graph.setStrict(false);
 		graph.setAutoCreate(true);
         
-		for(int i=0;i< MainController.muslukSayisi;i++) {
+		for(int i=0;i< MainController.numOfPump;i++) {
 			graph.addNode(i+"");
 		}			
 
